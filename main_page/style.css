@@ -1,0 +1,267 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  min-height: 1200px;
+  background: linear-gradient(0deg , rgb(10, 25, 47), rgba(10, 20, 40, 0.89));
+}
+
+/* HEADER */
+header {
+  height: 20%;
+  background-color: rgb(10, 25, 47);
+  display: flex;
+  flex-direction: column;
+  border-bottom: rgba(255, 255, 255, 0.46) solid 1px;
+}
+header ul {
+  display: flex;
+  gap: 14px;
+  align-self: center;
+  margin-bottom: 20px;
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none;
+  font-size: larger;
+  color: rgba(255, 255, 255, 0.581);
+  padding: 10px;
+}
+header ul li a:hover {
+  background-color: rgba(102, 159, 245, 0.612);
+  border-radius: 15px;
+  color: rgba(255, 255, 255, 0.921);
+  transition-duration: 0.5s;
+}
+header ul li a:focus {
+  background: linear-gradient(130deg , rgb(18, 160, 217), rgb(45, 243, 200));
+}
+header h1 {
+  text-align: center;
+  background: linear-gradient(130deg, rgb(18, 160, 217), rgb(45, 243, 200));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 30px auto;
+}
+#title i {
+  display: inline;
+}
+#title {
+  display: flex; 
+}
+
+/* MAIN */
+main h2 {
+  text-align: center;
+  background: linear-gradient(130deg, rgb(18, 160, 217), rgba(116, 13, 225, 0.559));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 30px;
+  font-size: xx-large;
+  font-weight:900;
+}
+main > p {
+  color: rgba(244, 238, 231, 0.63);
+  text-align: center;
+  margin: 0px 40px 10px 40px;
+  font-size: x-large;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-color: rgba(17, 23, 42, 0.685);
+  margin: 0px 40px 30px 40px;
+  border-radius: 20px;
+  padding: 30px 0px;
+}
+.BOX {
+  width: 90%;
+  min-height: 300px;
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 18px;
+  border: rgba(128, 128, 128, 0.373) 1px solid;
+}
+.BOX i {
+  display: block;
+  margin-bottom: 20px;
+  font-size: xxx-large;
+  background-color: red;
+  border-radius: 15px;
+  padding: 10px 40px;
+  width: 20%;
+  color: rgba(255, 255, 255, 0.816);
+}
+.BOX strong {
+  color: rgba(255, 255, 255, 0.858);
+  font-weight: 900;
+  font-size: x-large;
+  margin-bottom: 30px;
+}
+.BOX p {
+  color: rgb(240, 233, 233); 
+  font-size: larger;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+.BOX:hover {
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+  cursor: pointer;
+}
+
+/* EACH BOX */
+#Course {
+  background: linear-gradient(70deg , orange, rgba(233, 187, 100, 0.398));
+}
+#Course i {
+  background: linear-gradient(70deg, rgba(255, 166, 0, 0.285), rgba(246, 180, 59, 0.718));
+}
+#Video_content {
+  background: linear-gradient(70deg, rgba(160, 83, 160, 0.2), purple);
+}
+#Video_content i {
+  background: linear-gradient(100deg, purple, rgba(255, 255, 255, 0.495));
+}
+#Exams {
+  background: linear-gradient(130deg, rgb(192, 21, 21), rgba(255, 0, 0, 0.347));
+}
+#Exams i {
+  background: linear-gradient(100deg, red, rgb(184, 103, 103));
+}
+#Summaries {
+  background: linear-gradient(130deg, green, rgb(138, 209, 138));
+}
+#Summaries i {
+  background: linear-gradient(100deg, rgb(40, 220, 40), rgb(138,209,138));
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(41, 77, 131, 0.546);
+  padding: 20px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  align-items: center;
+  gap: 19px;
+}
+footer > strong > strong {
+  color: aliceblue;
+  font-size: x-large;
+  display: inline-block;
+}
+footer > strong > strong:first-letter {
+  font-size: xx-large;
+  color: rgb(214, 139, 40);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+footer p {
+  font-size: x-large;
+  color: rgba(128, 128, 128, 0.746);
+}
+footer strong {
+  color: white;
+}
+
+/* DISCORD + BUTTON */
+#discord i {
+  background: linear-gradient(100deg, purple, rgb(160, 100, 160));
+  padding: 20px;
+}
+#discord p {
+  font-size: x-large;
+}
+button {
+  margin-top: 30px;
+  border-radius: 30px;
+  background: linear-gradient(100deg, purple, rgb(160, 100, 160));
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: x-large;
+  padding: 20px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  header ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .layout {
+    margin: 20px;
+    padding: 20px;
+  }
+  .BOX {
+    padding: 30px;
+  }
+  .BOX i {
+    width: auto;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 20px 0;
+  }
+  header h1 {
+    font-size: 2rem;
+    margin: 20px auto;
+  }
+  main h2 {
+    font-size: 1.8rem;
+  }
+  main > p {
+    font-size: 1.2rem;
+    margin: 0 20px 10px 20px;
+  }
+  .layout {
+    gap: 20px;
+  }
+  .BOX {
+    width: 95%;
+    padding: 20px;
+  }
+  .BOX strong {
+    font-size: 1.3rem;
+  }
+  .BOX p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .layout {
+    margin: 10px;
+    padding: 15px;
+  }
+  .BOX {
+    min-height: auto;
+  }
+  footer p, footer strong {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
